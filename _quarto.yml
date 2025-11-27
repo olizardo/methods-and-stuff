@@ -1,0 +1,31 @@
+project:
+  type: website
+  output-dir: docs
+execute: 
+  freeze: auto
+    
+website:
+  title: "Methods and Stuff"
+  search: true
+  open-graph: true
+  repo-url: https://github.com/olizardo/methods-and-stuff
+  repo-actions: [source]
+  sidebar:
+    style: "docked"
+    contents:
+      - href: index.qmd
+      - href: ca.qmd
+      - href: poly.qmd
+
+format:
+  html:
+    theme:
+      light: flatly
+      dark: darkly    
+    css: styles.css
+    toc: true
+    linkcolor: "#ff7e26;"
+
+bibliography: methods.bib
+editor: source
+
